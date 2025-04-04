@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 import { Contact } from '@/lib/validationSchemas';
 
 /* Renders a single row in the List Stuff table. See list/page.tsx. */
-const ContactCard = ({ contact }: { contact: Contact }) => (
+const ContactCardAdmin = ({ contact }: { contact: Contact }) => (
   <Card className="h-100">
     <Card.Header>
       <Image src={contact.image} width={75} />
@@ -25,7 +25,10 @@ const ContactCard = ({ contact }: { contact: Contact }) => (
         {contact.description}
       </Card.Text>
     </Card.Body>
+    <Card.Footer className="blockquote-footer">
+      {contact.owner}
+    </Card.Footer>
   </Card>
 );
 
-export default ContactCard;
+export default ContactCardAdmin;
