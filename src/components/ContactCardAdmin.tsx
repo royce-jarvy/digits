@@ -4,7 +4,7 @@
 
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
-import { Contact } from '@/lib/validationSchemas';
+import { Contact } from '@prisma/client';
 
 /* Renders a single row in the List Stuff table. See list/page.tsx. */
 const ContactCardAdmin = ({ contact }: { contact: Contact }) => (
