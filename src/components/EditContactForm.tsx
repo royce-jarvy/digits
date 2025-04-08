@@ -27,7 +27,6 @@ const EditContactForm = ({ contact }: { contact: Contact }) => {
   } = useForm<Contact>({
     resolver: yupResolver(EditContactSchema),
   });
-  // console.log(stuff);
 
   return (
     <Container className="py-3">

@@ -23,7 +23,6 @@ const onSubmit = async (data: {
 
 const AddContactForm: React.FC = () => {
   const { data: session, status } = useSession();
-  // console.log('AddStuffForm', status, session);
   const currentUser = session?.user?.email || '';
   const {
     register,
@@ -77,7 +76,7 @@ const AddContactForm: React.FC = () => {
                 <Row>
                   <Col>
                     <Form.Group>
-                      <Form.Label>Adress</Form.Label>
+                      <Form.Label>Address</Form.Label>
                       <input
                         type="text"
                         {...register('address')}
